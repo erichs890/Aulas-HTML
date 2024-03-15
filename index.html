@@ -30,16 +30,16 @@
         <br>
         <label for="filho">Qtde Filhos</label>
         <input type="number" name="filho" id="filho">
-        <label for="peso">Peso 0</label>
+        Peso: <output id="value"></output>
+        <label for="">kg</label>
         <input type="range" name="peso" id="peso" min="0" max="200">
-        <label for=""> 200</label>
         <br>
         <br>
         <label for="">Sexo</label>
         <br>
         <label for="masculino">Masculino</label>
         <input type="radio" name="masculino" id="masculino" value="masculino">
-        <br>
+        <br>    
         <label for="feminino">Feminino</label>
         <input type="radio" name="feminino" id="feminino" value="feminino">
         <br>
@@ -58,5 +58,15 @@
         <input type="reset">
         <button>Enviar</button>
     </form>
+
+    <script>
+    const value = document.querySelector("#value");
+    const input = document.querySelector("#peso");
+    value.textContent = input.value;
+    input.addEventListener("input", (event) => {
+    value.textContent = event.target.value;
+    });
+
+    </script>
 </body>
 </html>
