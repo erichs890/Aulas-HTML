@@ -49,14 +49,15 @@ header{
    background-color: black;
   padding: 10px 20px;
   font-size: 29px;
-  color: white;
+  color: rgb(184, 184, 184);
   text-decoration: none;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
 }
 .curriculo:hover{
     transform: scale(1.2);
-}
+    color:white
+}   
 li{
     transition: 0.2s ease-in-out;
 
@@ -127,3 +128,38 @@ li:hover{
   border-top: 10px solid #000000;
   padding-top: 50px;
 }   
+.tituloCursos{
+    max-width: 500px;
+    word-wrap: break-word;
+    font-size: 140px;
+    line-height: 1.5;
+}
+.gradeCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.curso {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cursoTitulo{
+    font-size: 27px;
+  }
+  .cursoNome{
+    color:white ;
+  }
+.cursoTexto{
+    color: black;
+}
+.cursoTempo{
+    color: white;
+}
